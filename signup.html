@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign Up page</title>
+    <style>
+        *{
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #000000;
+        }
+        .holder
+        {
+            width: 50%;
+            margin: 150px auto;
+        }
+        .heading
+        {
+            font-family: Inter;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .signupForm{
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .inputfeild
+        {
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            border:none;
+            line-height: normal;
+            background-color: transparent;
+            border-bottom: 1px solid white;
+        }
+        .inputfeild:focus {
+            outline: none;
+            border-bottom: 1px solid white;
+        }
+        .submitbutton
+        {
+                width: 200px;
+                height: 50px;
+                background-color: white;
+                color: #000;
+                font-family: Inter;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+        }
+    </style>
+</head>
+<body>
+    <main class="holder">
+        <h1 class="heading">Signup</h1>
+        <form method="post" class="signupForm" action="">
+            <input type="text" class="inputfeild" placeholder="Full Name" required>
+            <input type="email" class="inputfeild" placeholder="Email" required>
+            <input type="password" class="inputfeild" placeholder="Password" required>
+            <input type="text" class="inputfeild" placeholder="Confirm Password" required>
+            <input type="date" class="inputfeild" placeholder="MM/DD/YYYY" required>
+            <div class="radio-buttons">
+                <input type="radio" name="profession" value="Student" id="student" required>
+                <label for="student">Student</label>
+                <input type="radio" name="profession" value="Employee" id="employee" required>
+                <label for="employee">Employee</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="" id="check" required>
+                <label for="check">I agree to all the Terms and conditions</label>
+            </div>
+            <button class="submitbutton" type="submit">Signup</button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
